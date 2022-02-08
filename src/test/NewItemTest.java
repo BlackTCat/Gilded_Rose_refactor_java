@@ -10,9 +10,9 @@ class NewItemTest {
     void testUpdateQuality() {
         NewItem item = new NewItem("Default Item", 10, 40, "calcQualityDefault");
         item.updateQuality();
-        int[] m = {9, 39};
+        int[] expected = {9, 39};
         int[] result = {item.sale_in, item.quality};
-        assertEquals(m[0], result[0]);
-        assertEquals(m[1], result[1]);
+        assertEquals(expected[0], result[0]);
+        assertEquals(expected[1], result[1]);
     }
 }
